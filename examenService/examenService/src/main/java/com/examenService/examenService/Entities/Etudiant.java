@@ -17,8 +17,9 @@ public class Etudiant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
-    private int cin;
+    private String cin;
     private String nom;
     private String prenom;
+    private String Groupe;
+    private String qrCode;
 }

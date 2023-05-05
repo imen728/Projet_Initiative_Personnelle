@@ -29,6 +29,7 @@ public class EtudiantService {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
     public ResponseEntity<Etudiant> addEtudiant(Etudiant etudiant) {
 
         if (etudiant == null) {
@@ -56,7 +57,6 @@ public class EtudiantService {
     }
 
     public void deleteEtudiant(long id) {
-
         etudiantRepository.deleteById(id);
     }
 

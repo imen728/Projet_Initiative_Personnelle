@@ -11,8 +11,9 @@ import lombok.*;
 @Setter
 public class EtudiantDto {
     private long id;
-
-    private int cin;
+    private String cin;
     private String nom;
     private String prenom;
+    private String Groupe;
+    private String qrCode;
 }
